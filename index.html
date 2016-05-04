@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Stockpriceprediction by scorpionhiccup</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Stockpriceprediction</h1>
+        <h2>Stock Price Prediction using Machine Learning Techniques</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/scorpionhiccup/StockPricePrediction/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/scorpionhiccup/StockPricePrediction/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/scorpionhiccup/StockPricePrediction" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="stock-market-predictor-using-supervised-learning" class="anchor" href="#stock-market-predictor-using-supervised-learning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Stock Market Predictor using Supervised Learning</h1>
+
+<h3>
+<a id="aim" class="anchor" href="#aim" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Aim</h3>
+
+<p>To examine a number of different forecasting techniques to predict future stock returns based on past returns and numerical news indicators to construct a portfolio of multiple stocks in order to diversify the risk. We do this by applying supervised learning methods for stock price forecasting by interpreting the seemingly chaotic market data.</p>
+
+<h2>
+<a id="setup-instructions" class="anchor" href="#setup-instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup Instructions</h2>
+
+<pre><code>    $ workon myvirtualenv                                  [Optional]
+    $ pip install -r requirements.txt
+    $ python scripts/Algorithms/regression_models.py &lt;input-dir&gt; &lt;output-dir&gt;
+</code></pre>
+
+<p>Download the Dataset needed for running the code from <a href="https://drive.google.com/open?id=0B2lCmt16L_r3SUtrTjBlRHk3d1E">here</a>.</p>
+
+<h2>
+<a id="project-concept-video" class="anchor" href="#project-concept-video" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Concept Video</h2>
+
+<p><a href="https://www.youtube.com/watch?v=z6U0OKGrhy0"><img src="http://i.giphy.com/xT1XGAkOpZVdi3aEFi.gif" alt="Project Concept Video"></a></p>
+
+<h3>
+<a id="methodology" class="anchor" href="#methodology" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Methodology</h3>
+
+<ol>
+<li>Preprocessing and Cleaning</li>
+<li>Feature Extraction</li>
+<li>Twitter Sentiment Analysis and Score</li>
+<li>Data Normalization</li>
+<li>Analysis of various supervised learning methods</li>
+<li>Conclusions</li>
+</ol>
+
+<h3>
+<a id="research-paper" class="anchor" href="#research-paper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Research Paper</h3>
+
+<ul>
+<li><a href="http://cs229.stanford.edu/proj2013/DaiZhang-MachineLearningInStockPriceTrendForecasting.pdf">Machine Learning in Stock Price Trend Forecasting. Yuqing Dai, Yuning Zhang</a></li>
+<li><a href="http://cs229.stanford.edu/proj2012/ShenJiangZhang-StockMarketForecastingusingMachineLearningAlgorithms.pdf">Stock Market Forecasting Using Machine Learning Algorithms. Shunrong Shen, Haomiao Jiang. Department of Electrical Engineering. Stanford University</a></li>
+<li><a href="http://cs229.stanford.edu/proj2015/009_report.pdf">How can machine learning help stock investment?, Xin Guo</a></li>
+</ul>
+
+<h3>
+<a id="datasets-used" class="anchor" href="#datasets-used" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Datasets used</h3>
+
+<ol>
+<li><a href="http://www.nasdaq.com/">http://www.nasdaq.com/</a></li>
+<li><a href="https://in.finance.yahoo.com">https://in.finance.yahoo.com</a></li>
+<li><a href="https://www.google.com/finance">https://www.google.com/finance</a></li>
+</ol>
+
+<h3>
+<a id="useful-links" class="anchor" href="#useful-links" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Useful Links</h3>
+
+<ul>
+<li>
+<strong>Slides</strong>: <a href="http://www.slideshare.net/SharvilKatariya/stock-price-trend-forecasting-using-supervised-learning">http://www.slideshare.net/SharvilKatariya/stock-price-trend-forecasting-using-supervised-learning</a>
+</li>
+<li>
+<strong>Video</strong>: <a href="https://www.youtube.com/watch?v=z6U0OKGrhy0">https://www.youtube.com/watch?v=z6U0OKGrhy0</a>
+</li>
+<li>
+<strong>Report</strong>: <a href="https://github.com/scorpionhiccup/StockPricePrediction/blob/master/Report.pdf">https://github.com/scorpionhiccup/StockPricePrediction/blob/master/Report.pdf</a>
+</li>
+</ul>
+
+<h3>
+<a id="references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>References</h3>
+
+<ul>
+<li><a href="http://scikit-learn.org/stable/">Scikit-Learn</a></li>
+<li><a href="http://deeplearning.net/software/theano/">Theano</a></li>
+<li><a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">Recurrent Neural Networks - LSTM Models</a></li>
+<li><a href="http://people.duke.edu/%7Ernau/411arim.htm">ARIMA Models</a></li>
+<li><a href="https://github.com/dv-lebedev/google-quote-downloader">https://github.com/dv-lebedev/google-quote-downloader</a></li>
+<li><a href="http://www.investopedia.com/terms/b/bookvalue.asp">Book Value</a></li>
+<li><a href="http://www.investopedia.com/articles/basics/09/simplified-measuring-interpreting-volatility.asp">http://www.investopedia.com/articles/basics/09/simplified-measuring-interpreting-volatility.asp</a></li>
+<li><a href="http://www.stock-options-made-easy.com/volatility-index.html">Volatility</a></li>
+<li><a href="https://github.com/dzitkowskik/StockPredictionRNN">https://github.com/dzitkowskik/StockPredictionRNN</a></li>
+</ul>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
